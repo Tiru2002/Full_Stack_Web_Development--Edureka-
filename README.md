@@ -6,3 +6,7 @@ learning full stack web development with Edureka
 <img src="https://github.com/Tiru2002/Full_Stack_Web_Development--Edureka-/blob/main/Day%201/TaskOfTheDay.jpeg">
 <br>
 <a href="https://github.com/Tiru2002/Full_Stack_Web_Development--Edureka-/blob/main/Day%201/Index.html"> code to get output</a>
+<br>
+<br>
+<h3>Day-02 (task):</h3>
+
