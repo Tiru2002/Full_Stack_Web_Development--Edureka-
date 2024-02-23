@@ -1,0 +1,12 @@
+p{
+    color: plum;
+    font-size: 19px;
+}
+#First{
+    font-size: 25px;
+    color: aqua;
+    border-bottom:solid 2px gold;
+}
+body{
+    background-color: black;
+}
