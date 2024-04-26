@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+@mixin flex{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+@mixin center{
+  
+    align-items: center;
+}
+@mixin font($fsize,$fcolor,$fweight){
+    font-size: $fsize;
+    color: $fcolor;
+    font-weight: $fweight;
+}
+@mixin div($height,$width) {
+    height: $height;
+    width: $width;
+}
+.header{
+    background-color:red;
+    width: 100%;
+    height:60px;
+    @include flex()
+}
+.logo{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left:1px;
+}
+.logo-text{
+    color: red;
+    font-weight:9;
+}
+.top-right{
+    margin-left: 70%;
+}
+button{
+    background: transparent;
+    color: white;
+    border-style:none;
+    font-size: 15px;
+}
+.account{
+    padding: 10px;
+    border:2px solid white;
+}
+.main{
+    display: flex;
+    justify-content: center;
+}
+.content{
+    @include div(830px,83%)
+}
+#title{
+    @include font(40px,black,900);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.filters{
+    @include div(750px,25%);
+    padding-top: 2%;
+    padding-left: 2%;
+    line-height: 40px;
+    box-shadow: 1px 1px 4px;
+}
+#headings{
+    @include font(20px,darkblue,500);
+}
+.filter-check{
+    @include font(20px,black,9);
+    
+}
+.fill-width{
+    width:90%;
+}
+#fil-title{
+    @include font(30px,rgb(0, 0, 104),900);
+
+}
+.sel-loc{
+    display: grid;
+    grid-template-columns: 95%;
+    grid-template-rows: 50px;
+    justify-content: start;
+}
+.fil-input{
+    line-height: 30px;
+}
+.body{
+    display: flex;
+}
+.menu{
+    @include div(680px, 71% );
+    margin-left: 35px;
+}
+.line-1{
+    @include div(38%, 100%);
+    margin-bottom: 4%;
+    box-shadow: 1px 1px 4px;
+}
+.line-2{
+    @include div(38%, 100%);
+    margin-bottom: 4%;
+    box-shadow: 1px 1px 4px;
+}
+.page-no{
+    @include div(9%, 100%);
+    box-shadow: 0px 0px 4px;
+}
+.img-desc{
+    @include div(60%,93% );
+    margin-left: 3%;
+    display: flex;
+    border-bottom: grey 1px solid;
+}
+.detail{
+    @include div(39%,93% );
+    margin-left: 3%;
+    display: flex;
+}
+.img{
+    @include div(100%,17% );
+    display:flex;
+    align-items:center;
+}
+.desc{
+    @include div(100%,100% );
+    line-height: 25px;
+    margin-left: 3%;
+}
+.meal-title{
+    padding-top: 5%;
+}
+.detail-left{
+    line-height: 20px;
+    @include div(100%,17% );
+}
+.detail-right{
+    line-height: 41px;
+    @include div(100%,100%);
+    margin-left: 3%;
+}
+#detail-desc{
+    color: grey;
+    font-size: large;
+    padding-top: 10%;
+}
+#detail-right-desc{
+    color: black;
+    font-size: larger;
+}
+img{
+    border-radius: 30%;
+}
+.page-no{
+    display: grid;
+    column-gap: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 50px 50px 50px 50px 50px 50px 50px;
+}
+.pg-no{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width:40px;
+    border:2px solid grey;
+    border-radius: 12px;
+}
+.pg-no1{
+    background-color: grey;
+    color: white;
+}
+.resp-tab{
+    display: none;
+}
+ @media(max-width:1000px){
+    .top-right{
+        margin-left:50%;
+    }
+    .filters{
+        display: none;
+    }
+    .resp-tab{ 
+        margin-left: 0%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 80px;
+        justify-content:center;
+        box-shadow: 1px 1px 4px;
+        margin-bottom: 30px;
+        
+    }
+    .menu{
+        margin-left: 0%;
+        width:200%;
+    }
+    
+}
+    @media (max-width:700px){
+        .line-1{
+            display: flex;
+            flex-direction: column;
+            height: 450px;
+
+            justify-content: center;
+
+        }
+        .line-2{
+            display: flex;
+            flex-direction: column;
+            height: 450px;
+            justify-content: center;
+
+        }
+        .img-desc{
+            display: flex;
+            flex-direction: column;
+            height: 250px;
+            justify-content: center;
+
+        }
+        .img{
+            width: 200px;
+            height: 100px;
+            padding-top: 20px;
+            padding-left: 38%;
+        }
+        .desc{
+            padding-left:12%;
+            // justify-content: center;
+            width: 80%;
+        }
+        .detail{
+            display: flex;
+            padding-left: 10%;
+        }
+        .detail-right{
+            padding-left: 40%;
+        }
+    }
