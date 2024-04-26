@@ -1,0 +1,13 @@
+.main{
+    height:100px;
+    width: 100%;
+    border: 2px green solid;
+    display: grid;
+}
+.col-4{
+    height: 100px;
+    background-color: red;
+    display: flex;
+    
+
+}
