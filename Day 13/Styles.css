@@ -1,0 +1,98 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+#img{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+.letter{
+    padding-top: 20px;
+}
+button{
+    background: transparent;
+    color: white;
+    border-style:none;
+}
+h1{ 
+    font-size: 40px;
+    color: red;
+}
+.main{
+    position: absolute;
+    width:100%;
+    top:0%;
+    height: 55%;
+}
+.top-right{
+    padding-top: 10px;
+}
+.account{
+    padding: 5px;
+    border:2px solid white;
+}
+.logo-bg{
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+    background-color:white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text{
+    color: white;
+    font-size: 150%;
+}
+
+.top-center{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5%;
+}
+.name{
+    display: inline;
+}
+.search2{
+    width:400px;
+}
+.top-bottom{
+   width:80%;
+   margin: auto;
+    border: 2px solid red;
+}
+.content1,.content{
+    margin-right:10% ;
+    margin-left: 10% ;
+}
+#quick{
+    color:darkblue;
+    font-weight: bolder;
+    font-size: 30px;
+    line-height: 0px;
+}
+.body-inside{
+    display: flex;
+    justify-content: space-evenly ;
+    row-gap: 20px;
+    padding: 10px;
+}
+
+.pic{
+    display: flex;
+}
+.quotes{
+    padding: 5px;
+}
+#meal-title{
+    line-height:5px;
+    font-size:20px;
+    color: darkblue;
+}
+.meal{
+    box-shadow: 1px 1px 5px;
+    min-width: 350px;
+}
