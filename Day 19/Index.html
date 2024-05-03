@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 19 DIY</title>
+</head>
+<body>
+    <script>
+        //Q.no 1
+        var x=10;
+        var y=20;
+        if (y>x){
+            console.log("Y is greater than x");
+        }
+
+        //Q.no 2
+        var z='one';
+        switch(z){
+            case 'one':
+                console.log("Hello from case one...");
+                break;
+            case 'two':
+                console.log("Hello from case two...");
+                break;
+            case 'three':
+                console.log("Hello from case three...");
+                break;  
+        }
+
+        //Q.no 3
+        var k=1;
+        var sum=0;
+        while(k<=10){
+            sum+=10;
+            k++;
+        }
+        console.log(sum);
+        
+        //Q.no 4
+        for(let i=0;i<5;i++){
+            console.log("Welcome to Veranda");
+        }
+
+        //Q.no 5
+        constnewObj=[
+             {id:1,order:'Below500','orderpercentage':'10.05',restaurant:'PunjabiTadka',},
+             {id:2,order:'500-1000','orderpercentage':'14.57', restaurant:'PunjabiTadka',},
+             {id:3,order:'1000-1500','orderpercentage':'15.08', restaurant:'PunjabiTadka',},
+             {id:4,order:'1500-2000','orderpercentage':'22.11', restaurant:'PunjabiTadka',},
+             {id:5,order:'Above2000','orderpercentage':'38.19', restaurant:'PunjabiTadka',},
+            ];
+        for(let i of constnewObj){
+            console.log(i['orderpercentage']);
+        }
+
+    </script>
+</body>
+</html>
