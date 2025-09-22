@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduCourses</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        xintegrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        xintegrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0acffe 0%, #495aff 25%, #9b5de5 50%, #f15bb5 75%, #ff9e00 100%);
+        }
+
+        .carousel-item {
+            height: 80vh;
+            background-size: cover;
+            background-position: center;
+            position: relative;
+        }
+
+        .carousel-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .testimonial-card img {
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .testimonial-card:hover img {
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body class="text-white">
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow-lg sticky-top">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-info" href="#">EduCourses</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#our-courses">Courses</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#featured-courses">Instructors</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                    <li class="nav-item"><a class="btn btn-info text-white ms-lg-3 rounded-pill" href="#cta">Sign Up</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Carousel -->
+    <div id="courseCarouselMain" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: url('./download.jpeg');">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption d-flex flex-column h-100 justify-content-center align-items-center">
+                    <h1 class="fw-bold text-center display-3 drop-shadow">Welcome to Our Courses</h1>
+                    <p class="lead drop-shadow">Learn with experts at your own pace.</p>
+                    <a href="#featured-courses" class="btn btn-lg btn-warning mt-3 rounded-pill">Get Started</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://placehold.co/1920x1080/3b82f6/fff?text=Interactive+Learning');">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption d-flex flex-column h-100 justify-content-center align-items-center">
+                    <h1 class="fw-bold text-center display-3 drop-shadow">Interactive Learning</h1>
+                    <p class="lead drop-shadow">Boost your skills with hands-on projects.</p>
+                    <a href="#featured-courses" class="btn btn-lg btn-warning mt-3 rounded-pill">Get Started</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('https://placehold.co/1920x1080/10b981/fff?text=Master+New+Skills');">
+                <div class="carousel-overlay"></div>
+                <div class="carousel-caption d-flex flex-column h-100 justify-content-center align-items-center">
+                    <h1 class="fw-bold text-center display-3 drop-shadow">Master New Skills</h1>
+                    <p class="lead drop-shadow">From beginner to expert, we have a course for you.</p>
+                    <a href="#featured-courses" class="btn btn-lg btn-warning mt-3 rounded-pill">Explore Courses</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#courseCarouselMain" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#courseCarouselMain" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Hero 2 Section -->
+    <section class="container my-5 py-5">
+        <div class="row align-items-center g-5">
+            <div class="col-lg-6">
+                <img src="https://placehold.co/800x600/1e293b/fff?text=Web+Developer" class="img-fluid rounded-3 shadow-lg"
+                    alt="Student learning web development">
+            </div>
+            <div class="col-lg-6 text-center text-lg-start">
+                <h1 class="fw-bold text-white mb-4">Master Web Development: From Beginner to Pro</h1>
+                <p class="lead text-gray-300">Are you ready to build a career in web development? Our comprehensive online course is
+                    designed for total beginners, guiding you through the fundamentals of HTML, CSS, and JavaScript. Learn at your
+                    own pace with practical, hands-on projects that will prepare you for the job market.</p>
+                <div class="row justify-content-center justify-content-lg-start text-center mt-5 g-4">
+                    <div class="col-6 col-md-3">
+                        <div class="d-flex flex-column align-items-center bg-dark p-4 rounded-3 shadow h-100">
+                            <i class="fas fa-video text-warning fs-3 mb-3"></i>
+                            <div class="small fw-semibold text-white">Video Lectures</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="d-flex flex-column align-items-center bg-dark p-4 rounded-3 shadow h-100">
+                            <i class="fas fa-tasks text-warning fs-3 mb-3"></i>
+                            <div class="small fw-semibold text-white">Interactive Quizzes</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="d-flex flex-column align-items-center bg-dark p-4 rounded-3 shadow h-100">
+                            <i class="fas fa-download text-warning fs-3 mb-3"></i>
+                            <div class="small fw-semibold text-white">Downloadable Resources</div>
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-3">
+                        <div class="d-flex flex-column align-items-center bg-dark p-4 rounded-3 shadow h-100">
+                            <i class="fas fa-lock text-warning fs-3 mb-3"></i>
+                            <div class="small fw-semibold text-white">Lifetime Access</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Courses Section -->
+    <section id="our-courses" class="container py-5 mt-5">
+        <h1 class="section-title text-white">Our Courses</h1>
+        <div class="row g-4 text-center">
+            <div class="col-md-3">
+                <div class="card h-100 rounded-3 border-0 shadow-lg" style="background-color: #1434E9;">
+                    <div class="card-body py-5">
+                        <i class="fas fa-graduation-cap text-white fs-1 mb-4"></i>
+                        <p class="fw-medium text-white mb-0">CODING & TECH</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 rounded-3 border-0 shadow-lg" style="background-color: #E914A9;">
+                    <div class="card-body py-5">
+                        <i class="fas fa-book text-white fs-1 mb-4"></i>
+                        <p class="fw-medium text-white mb-0">BUSINESS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 rounded-3 border-0 shadow-lg" style="background-color: #BDB806;">
+                    <div class="card-body py-5">
+                        <i class="fas fa-lightbulb text-white fs-1 mb-4"></i>
+                        <p class="fw-medium text-white mb-0">CREATIVE ARTS</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="card h-100 rounded-3 border-0 shadow-lg" style="background-color: #7810EE;">
+                    <div class="card-body py-5">
+                        <i class="fas fa-handshake text-white fs-1 mb-4"></i>
+                        <p class="fw-medium text-white mb-0">PERSONAL DEVELOPMENT</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Latest Course Offerings Section -->
+    <section id="featured-courses" class="container py-5 mt-5">
+        <h2 class="section-title text-white">Latest Course Offerings</h2>
+        <div class="row g-4">
+            <div class="col-md-4">
+                <div class="card h-100 rounded-3 border-0 shadow-lg bg-dark text-white">
+                    <img src="https://placehold.co/600x400/f5f5f5/333?text=Web+Development" class="card-img-top rounded-top-3"
+                        alt="Web Development Course">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Introduction to Web Development</h5>
+                        <p class="card-text text-gray-300 mt-2 flex-grow-1">Learn the fundamentals of HTML, CSS, and JavaScript to build your first website.</p>
+                        <a href="#cta" class="btn btn-warning rounded-pill mt-4">Start Free Trial</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 rounded-3 border-0 shadow-lg bg-dark text-white">
+                    <img src="https://placehold.co/600x400/f5f5f5/333?text=Data+Science" class="card-img-top rounded-top-3"
+                        alt="Data Science Course">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Python for Data Science</h5>
+                        <p class="card-text text-gray-300 mt-2 flex-grow-1">Master Python for data analysis, manipulation, and visualization.</p>
+                        <a href="#cta" class="btn btn-warning rounded-pill mt-4">Start Free Trial</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 rounded-3 border-0 shadow-lg bg-dark text-white">
+                    <img src="https://placehold.co/600x400/f5f5f5/333?text=UI/UX+Design" class="card-img-top rounded-top-3"
+                        alt="UI/UX Design Course">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title fw-bold">Fundamentals of UI/UX Design</h5>
+                        <p class="card-text text-gray-300 mt-2 flex-grow-1">Dive into the world of user interface and user experience design.</p>
+                        <a href="#cta" class="btn btn-warning rounded-pill mt-4">Start Free Trial</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-5" style="background-color: #5544DD;">
+        <div class="container my-5">
+            <h2 class="section-title text-white">Our Student Success Stories</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="text-center px-4 py-5">
+                            <img src="https://placehold.co/120x120/f5f5f5/333?text=Manish" alt="Photo of Manish"
+                                class="rounded-circle mx-auto mb-4 border border-5 border-white">
+                            <p class="fst-italic lead mb-4 mx-auto w-75">"As an MCA graduate, I took several courses but struggled to get a good job. The faculty at Full stack development had an excellent teaching methodology that ignited my passion for web design. After completing the course, I was placed immediately. Thanks to [Your Course Name]!"</p>
+                            <h4 class="fw-bold mb-0">Manish S.</h4>
+                            <p class="text-white-50">Web Designer | Placed after completing the course</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center px-4 py-5">
+                            <img src="https://placehold.co/120x120/f5f5f5/333?text=Sangeeta" alt="Photo of Sangeeta"
+                                class="rounded-circle mx-auto mb-4 border border-5 border-white">
+                            <p class="fst-italic lead mb-4 mx-auto w-75">"I was a B.Com graduate and was nervous about coding before joining Full stack development. They trained me from the very basics, and now I can handle full-stack projects on my own. I also appreciated that they allowed me to practice all day, which is something I did not find at other institutes. The patience of the mentors was invaluable."</p>
+                            <h4 class="fw-bold mb-0">Sangeeta R.</h4>
+                            <p class="text-white-50">Full Stack Developer | B.Com Graduate</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center px-4 py-5">
+                            <img src="https://placehold.co/120x120/f5f5f5/333?text=Pooja" alt="Photo of Pooja"
+                                class="rounded-circle mx-auto mb-4 border border-5 border-white">
+                            <p class="fst-italic lead mb-4 mx-auto w-75">"After a long career break, I decided to learn web designing. Even though I had no prior software knowledge, the trainers at Python guided me with a positive approach. I want to thank them for their support and encouragement throughout the course."</p>
+                            <h4 class="fw-bold mb-0">Pooja G.</h4>
+                            <p class="text-white-50">Web Designer</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="text-center px-4 py-5">
+                            <img src="https://placehold.co/120x120/f5f5f5/333?text=Vijay" alt="Photo of Vijay Prakash"
+                                class="rounded-circle mx-auto mb-4 border border-5 border-white">
+                            <p class="fst-italic lead mb-4 mx-auto w-75">"I completed my front-end development course at React. My mentor, [Mentor's Name], was incredibly patient and taught us everything from the basics to advanced concepts. The practical, live sessions were extremely helpful for a beginner like me."</p>
+                            <h4 class="fw-bold mb-0">Vijay Prakash</h4>
+                            <p class="text-white-50">Front-End Developer</p>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="bg-dark text-white py-5 mt-5">
+        <div class="container text-center">
+            <h2 class="display-5 fw-bold mb-4">Ready to Master a New Skill?</h2>
+            <p class="lead text-gray-400 mb-5 mx-auto w-75">Join thousands of students and start your learning journey with EduCourses today. Your future starts now!</p>
+            <a href="#" class="btn btn-lg btn-warning rounded-pill fw-bold">Sign Up for Free</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-dark text-gray-300 py-5 mt-5">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-4 text-white">About Us</h5>
+                    <p class="small">EduCourses provides world-class online courses to help learners achieve their goals.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-4 text-white">What We Do</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-decoration-none text-gray-300">Learning Programs</a></li>
+                        <li><a href="#" class="text-decoration-none text-gray-300">Certifications</a></li>
+                        <li><a href="#" class="text-decoration-none text-gray-300">Partnerships</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="fw-bold mb-4 text-white">Site Navigation</h5>
+                    <ul class="list-unstyled small">
+                        <li><a href="#" class="text-decoration-none text-gray-300">About</a></li>
+                        <li><a href="#" class="text-decoration-none text-gray-300">Careers</a></li>
+                        <li><a href="#" class="text-decoration-none text-gray-300">Privacy Policy</a></li>
+                        <li><a href="#" class="text-decoration-none text-gray-300">Terms</a></li>
+                    </ul>
+                </div>
+            </div>
+            <hr class="border-secondary my-5">
+            <div class="text-center text-secondary small">
+                <p>&copy; 2025 EduGlobal. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        xintegrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
